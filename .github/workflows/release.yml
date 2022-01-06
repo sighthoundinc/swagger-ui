@@ -28,7 +28,7 @@ jobs:
             github.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: "refs/tags/${{ github.event.inputs.versionTag }}",
+              ref: "refs/tags/${{ github.event.inputs.dockerTagVersion }}",
               sha: context.sha
             })
 
