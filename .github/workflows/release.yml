@@ -15,10 +15,10 @@ on:
         description: "Is this a production release?"
         type: boolean
         required: true
-        
+
 jobs:
   # Run unit-tests on all branches and releases
-  unit-tests:
+  release:
     runs-on: [self-hosted, dgpu]
     steps:
       - name: Checkout
