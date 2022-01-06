@@ -78,5 +78,5 @@ jobs:
           else
             DOCKER_REGISTRY="gcr.io/test-bai"
           fi
-          docker buildx build --push --platform linux/arm64/v8 --platform linux/amd64 -t ${DOCKER_REGISTRY}/ext-sighthound-analytics-webapp:${{ github.event.inputs.dockerTagVersion }} .
+          docker buildx build --push --platform linux/arm64/v8 --platform linux/amd64 -t ${DOCKER_REGISTRY}/swagger-ui:${{ github.event.inputs.dockerTagVersion }} .
           
